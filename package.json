@@ -1,0 +1,33 @@
+{
+  "name": "react-native-whatsapp-stickers-android",
+  "title": "React Native Whatsapp Stickers Android",
+  "version": "1.0.2",
+  "description": "Native bindings for Whatsapp Sticker Packs :D",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pocket-titan/react-native-whatsapp-stickers.git",
+    "baseUrl": "https://github.com/Pocket-titan/react-native-whatsapp-stickers"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Jelmar Gerritsen",
+    "email": "jelmargerritsen@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "16.6.1",
+    "react-native": "0.57.5"
+  },
+  "devDependencies": {
+    "react": "16.6.1",
+    "react-native": "0.57.5"
+  }
+}

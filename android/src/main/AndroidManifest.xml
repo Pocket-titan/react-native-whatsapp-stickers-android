@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.whatsapp_stickers">
+    <application>
+        <provider
+          android:name=".stickers.StickerContentProvider"
+          android:authorities="${contentProviderAuthority}"
+          android:enabled="true"
+          android:exported="true"
+          android:readPermission="com.whatsapp.sticker.READ" />
+    </application>
+</manifest>
