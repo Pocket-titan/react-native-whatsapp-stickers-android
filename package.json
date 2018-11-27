@@ -1,7 +1,7 @@
 {
   "name": "react-native-whatsapp-stickers-android",
   "title": "React Native Whatsapp Stickers Android",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Native bindings for Whatsapp Sticker Packs :D",
   "main": "index.js",
   "scripts": {
