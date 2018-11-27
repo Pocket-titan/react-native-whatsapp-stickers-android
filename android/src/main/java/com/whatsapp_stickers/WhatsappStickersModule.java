@@ -69,12 +69,6 @@ public class WhatsappStickersModule extends ReactContextBaseJavaModule {
         return "WhatsappStickers";
     }
 
-    // Showing a Toast message
-    @ReactMethod
-    public void showToast(String message, int duration) {
-        Toast.makeText(getReactApplicationContext(), message, duration).show();
-    }
-
     // Adding a stickerPack
     @ReactMethod
     public void addStickerPack(String identifier, String stickerPackName, Promise promise) {
@@ -104,7 +98,7 @@ public class WhatsappStickersModule extends ReactContextBaseJavaModule {
         }
     }
 
-    // Getting the installed stickers
+    // Getting the stickers
     @ReactMethod
     public void fetchStickerPacks(Promise promise) {
         ArrayList<StickerPack> stickerPackList;
