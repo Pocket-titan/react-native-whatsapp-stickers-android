@@ -20,10 +20,30 @@
   	include ':react-native-whatsapp-stickers-android'
   	project(':react-native-whatsapp-stickers-android').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-whatsapp-stickers-android/android')
   	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-whatsapp-stickers-android')
-  	```
+3. Insert the following lines inside `android/app/build.gradle`:
+```
+android {
+	...
+	defaultConfig {
+  ...
+		def contentProviderAuthority = applicationId + ".stickercontentprovider"
+		// Creates a placeholder property to use in the manifest.
+		manifestPlaceholders =
+			[contentProviderAuthority: contentProviderAuthority]
+		// Adds a new field for the authority to the BuildConfig class.
+		buildConfigField(
+			"String",
+			"CONTENT_PROVIDER_AUTHORITY",
+			"\"${contentProviderAuthority}\""
+		)
+	}
+}
+...
+dependencies {
+	...
+	compile project(':react-native-whatsapp-stickers-android')
+}
+```
 
 ## Usage
 
